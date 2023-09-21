@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins&display=swap');
+$blue: #003968;
+$white: #ffffff;
+$blue_l: #d0e9ed;
+$black: #333;
+$red: #d41c2d;
+$yellow: #ffce44;
+
+p,
+span,
+label,
+a,
+ul,
+li,
+div {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+  color: $blue;
+}
+
+h1{
+    font-size: 70px;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    @media screen and (max-width:1199px){
+        font-size: 45px;
+    }
+}
+
+p{
+    font-size: 18px;
+}
+
+html,body{
+    background-color: $blue_l;
+}
+
+.sticky{
+    min-height: calc(100vh - 111px);
+    @media screen and (max-width:1199px){
+        min-height: calc(100vh - 153px);
+    }
+}
+
+//PreHeader
+.preheader{
+    background-color: $blue;
+    color: $white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+    .btn_call{
+        background-color: $blue_l;
+        color: $blue;
+        border-radius: 50px;
+        padding: 5px 25px;
+        -webkit-transition: all 0.2s ease-out 0s;
+        -o-transition: all 0.2s ease-out 0s;
+        -moz-transition: all 0.2s ease-out 0s;
+        transition: all 0.2s ease-out 0s;
+        &:hover{
+            background-color: $yellow;
+            color: $white;
+        }
+    }
+    @media screen and (max-width:1199px){
+        p,a{
+            font-size: 14px;
+        }
+    }
+}
+
+//Header
+.header{
+    .logo{
+        width: 100px;
+    }
+}
+
+//Footer
+.footer{
+    background-color: $blue;
+    color: $blue_l;
+    p,a{
+        font-size: 14px;
+        color: $blue_l;
+        text-decoration: none;
+        margin-bottom: 0;
+    }
+}
+
+//Form
+.btn_submit{
+    padding: 13px 29px;
+    background-color: $blue_l;
+    color: $blue;
+    border-radius: 50px;
+    border: 0;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+    &:hover{
+        background-color: $red;
+        color: $white;
+    }
+}
+
+.email_input{
+    border: 0;
+    border-bottom: 1px solid $black;
+    margin-bottom: 1em;
+}
+
+.form_email{
+    background-color: $white;
+    border-radius: 25px;
+}
+
+.checkboxText{
+    font-size: 14px;
+    p,a{
+        color: $black;
+        text-decoration: none;
+    }
+}
+.response{
+    color: $red;
+    p{
+        font-size: 16px;
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+}
+
+//Success & Error
+.email_reload{
+    color: $blue;
+}
