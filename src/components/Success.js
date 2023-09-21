@@ -9,11 +9,11 @@ import "../sass/custom.scss";
 
 function Success() {
   return (
-    <div className='Success'>
+    <div className='SuccessPage'>
       <div className='sticky'>
         <PreHeader />
         <Header />
-        <div className='container success_page py-5'>
+        <div className='container py-5'>
           <div className='row'>
             <div className=' col-11 col-lg-8'>
               <h1 className='mb-3'>Controlla la tua email!</h1>
